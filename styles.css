@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 3px 2px 0 hsl(28, 36%, 91%);
+}
+
+img {
+    width: 250px;
+    border-radius: 10px 0 0 10px;
+    height: 100%;
+}
+
+.txt-container {
+    padding: 25px;
+}
+
+.perfume{
+    font-family: 'Montserrat';
+    letter-spacing: 3.5px;
+    font-size: 10.5px;
+    margin-bottom: 17px;
+    color: hsl(228, 12%, 48%);
+}
+
+.txt-container h1 {
+    font-family: 'fraunces';
+    font-size: 27px;
+    line-height: 26px;
+    margin-bottom: 23px;
+}
+
+.parrafo {
+    font-family: 'Montserrat';
+    font-size: 13px;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 25px;
+    line-height: 19px;
+    font-weight: 500;
+}
+
+.prices {
+    display: flex;
+    align-items: center;
+    margin-bottom: 23px;
+}
+
+.price-one {
+    font-size: 25px;
+    color: hsl(158, 36%, 37%);
+    font-family: 'fraunces';
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-right: 16px;
+}
+
+.price-two {
+    font-family:'Montserrat';
+    font-size: 11px;
+    color: hsl(228, 12%, 48%);
+    font-weight: bold;
+}
+
+.cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px;
+    border-radius: 8px;
+    background-color: hsl(158, 36%, 37%);
+    cursor: pointer;
+}
+
+.cart a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.cart a i {
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+
+@media screen and (max-width: 515px) {
+    img {
+        width:300px;
+        height:300px;
+        background:url(image-product-mobile.jpg);
+        object-fit: cover;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    img {
+        border-radius: 10px 10px 0 0;
+        
+    }
+}
